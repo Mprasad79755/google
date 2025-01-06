@@ -49,33 +49,6 @@
             color: white;
         }
 
-        .row-numbers {
-            display: flex;
-            justify-content: center;
-            margin-top: 10px;
-        }
-
-        .row-numbers span {
-            width: 50px;
-            text-align: center;
-        }
-
-        .col-numbers {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            position: absolute;
-            top: 50%;
-            left: 20px;
-            transform: translateY(-50%);
-        }
-
-        .col-numbers span {
-            height: 50px;
-            line-height: 50px;
-            text-align: center;
-        }
-
     </style>
 </head>
 <body>
