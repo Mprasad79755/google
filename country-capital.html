@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country and Capital</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #e5e5e5;
+        }
+
+        .box {
+            padding: 30px;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            width: 280px;
+            max-width: 100%;
+        }
+
+        h3 {
+            color: #ff4081;
+            font-size: 1.6em;
+            margin-bottom: 15px;
+        }
+
+        select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            font-size: 1.1em;
+            background-color: #f9f9f9;
+            color: #555;
+        }
+
+        .capital {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+    <script>
+        function showCapital(country) {
+            let capitalText = "";
+
+            if (country === "India") {
+                capitalText = "Capital: New Delhi";
+            } else if (country === "USA") {
+                capitalText = "Capital: Washington, D.C.";
+            } else if (country === "UK") {
+                capitalText = "Capital: London";
+            } else if (country === "Australia") {
+                capitalText = "Capital: Canberra";
+            } else if (country === "Japan") {
+                capitalText = "Capital: Tokyo";
+            }
+
+            document.getElementById("capital").textContent = capitalText;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="box">
+        <h3>Select a Country</h3>
+        <select onchange="showCapital(this.value)">
+            <option value="">--Select--</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="Australia">Australia</option>
+            <option value="Japan">Japan</option>
+        </select>
+        <div id="capital" class="capital"></div>
+    </div>
+</body>
+
+</html>

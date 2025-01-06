@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>TEXTGROWSHRINK</title>
+  </head>
+  <style>
+    p {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+  <body>
+    <p id="demo"></p>
+    <script>
+      var var1 = setInterval(inTimer, 1000);
+      var fs = 5;
+      var ids = document.getElementById("demo");
+
+      function inTimer() {
+        ids.innerHTML = "Welcome All";
+        ids.setAttribute("style", `font-size: ${fs}pt; color: red;`);
+        fs += 10;
+        if (fs >= 50) {
+          clearInterval(var1);
+          var2 = setInterval(deTimer, 1000);
+        }
+      }
+
+      function deTimer() {
+        fs -= 5;
+        ids.innerHTML = "Thank You";
+        ids.setAttribute("style", `font-size: ${fs}pt; color: blue;`);
+        if (fs === 5) {
+          clearInterval(var2);
+        }
+      }
+    </script>
+  </body>
+</html>
+ 

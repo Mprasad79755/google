@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <title>Profile Card</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 0 15px;
+    }
+
+    .card {
+      width: 320px;
+      background: linear-gradient(145deg, #6a11cb, #2575fc);
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      padding: 40px 30px;
+      color: #fff;
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 120px; /* Adjust the height as needed */
+      margin-bottom: 30px;
+    }
+
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background-color: #fff;
+      font-size: 48px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+      color: #6a11cb; /* Change icon color */
+    }
+
+    .card-body {
+      margin-bottom: 20px;
+    }
+
+    .name {
+      font-size: 26px;
+      font-weight: 600;
+      margin-top: 10px;
+      color: #ffffff;
+    }
+
+    .mail {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.8);
+      margin-top: 5px;
+    }
+
+    .job {
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.8);
+      margin-top: 15px;
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .social-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, 0.3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: background-color 0.3s ease;
+    }
+
+    .social-icon i {
+      color: #fff;
+      font-size: 20px;
+    }
+
+    .social-icon:hover {
+      background-color: #fff;
+    }
+
+    .card-footer {
+      margin-top: 20px;
+      font-size: 14px;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.8);
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      padding-top: 10px;
+    }
+
+    .card-footer .count {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    @media screen and (max-width: 575px) {
+      .card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="card-header">
+      <div class="profile-img">
+        <i class="fas fa-user"></i>
+      </div>
+    </div>
+    <div class="card-body">
+      <p class="name">Mahadev Prasad R</p>
+      <a href="#" class="mail">mprasad@gmail.com</a>
+      <p class="job">Developer | Designer</p>
+    </div>
+    <div class="social-links">
+      <a href="#github" class="social-icon">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="#twitter" class="social-icon">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="#youtube" class="social-icon">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a href="#linkedin" class="social-icon">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+    <div class="card-footer">
+      <p class="count"><span>120</span> Followers | <span>10</span> Following</p>
+    </div>
+  </div>
+
+</body>
+</html>

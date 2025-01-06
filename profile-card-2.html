@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .profile-card {
+            background: #fff;
+            border: 2px solid transparent;
+            border-radius: 15px;
+            padding: 20px;
+            width: 350px;
+            text-align: center;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .profile-card:hover {
+            border-color: #00ffcc;
+            box-shadow: 0 10px 20px rgba(0, 255, 204, 0.5);
+        }
+
+        .profile-card img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 5px solid #00ffcc;
+            margin-bottom: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-card img:hover {
+            transform: scale(1.1);
+        }
+
+        .profile-card hr {
+            margin: 20px auto;
+            border: 0;
+            height: 1px;
+            background: #ddd;
+            width: 80%;
+        }
+
+        .profile-card h2 {
+            font-size: 20px;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .profile-card p {
+            font-size: 14px;
+            color: #555;
+            margin: 5px 0;
+        }
+
+        .profile-card .social-icons {
+            margin-top: 15px;
+        }
+
+        .social-icons a {
+            color: #555;
+            margin: 0 10px;
+            font-size: 18px;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #00ffcc;
+            transform: scale(1.2);
+        }
+
+        .profile-card .project-link {
+            margin-top: 20px;
+            display: inline-block;
+            padding: 10px 20px;
+            color: #fff;
+            background: #00ffcc;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            transition: background 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .profile-card .project-link:hover {
+            background: #007566;
+            box-shadow: 0 5px 10px rgba(0, 255, 204, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/9496/9496161.png" alt="Profile Picture">
+        <h2>Mahadev Prasad</h2>
+        <p>Software Developer | Full-Stack Enthusiast</p>
+        <hr>
+        <p>Email: mprasad@gmail.com</p>
+        <p>Phone: +91 99004 87896</p>
+        <hr>
+        <div class="social-icons">
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <a href="#" class="project-link" target="_blank">View My Projects</a>
+    </div>
+</body>
+</html>
