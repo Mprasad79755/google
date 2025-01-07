@@ -1,15 +1,14 @@
 <?php
-$expiration = time() + (60 * 60 * 24 * 30); // Set cookie expiration for 30 days
+$expiration = time() + (60 * 60 * 24 * 30); 
 
-// Check if the 'last-visited' cookie is set
+
 if (!isset($_COOKIE['last-visited'])) {
-    setcookie('last-visited', date('Y-m-d H:i:s'), $expiration); // Set the cookie with current date and time
+    setcookie('last-visited', date('Y-m-d H:i:s'), $expiration); 
 }
 
-// Set the last visited date from the cookie, or fallback to 'unknown' if cookie is not set
+
 $lastvisitedDateTime = $_COOKIE['last-visited'] ?? 'unknown';
 
-// Update the 'last-visited' cookie on every visit
 setcookie('last-visited', date('Y-m-d H:i:s'), $expiration);
 ?>
 
